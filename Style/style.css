@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@400;700&family=Ubuntu:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-site{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   
+}
+
+.texto-site > h1{
+    color:#77ffc0;
+    font-size: 3vw;
+}
+
+.img-texto{
+    width: 35vw;
+}
+
+.card-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.login-card{
+    width: 60%;
+    background:#2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-header > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.form-control{
+    background-color:#514869;
+    border-radius: 10px;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+.form-label{
+    color:#f0ffffde;
+    margin-bottom: 10px;
+}
+
+.form-control > input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 100;
+    margin: 9px 0px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:#2b134b;
+    background-color: #00ff88;
+    cursor:pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-login:hover{
+    background-color:#00ff8052;
+    color: #2b134b;
+}
+
+@media only screen and (max-width: 950px){
+    .login-card{
+        width: 80%;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .texto-site > h1{
+        display: none;
+    }
+    .texto-site{
+        width: 100%;
+        height: auto;
+    }
+    .card-login{
+        width: 100%;
+        height: auto;
+    }
+    .img-texto{
+        width: 50vh;
+    }
+
+}
